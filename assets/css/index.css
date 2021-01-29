@@ -1,0 +1,467 @@
+/* Root */
+:root {
+  --line-blue: rgb(3, 191, 254);
+  --full-blue: rgb(37, 110, 255);
+}
+
+/* index 공통 */
+body {
+  color: white;
+  /* background-color: black; */
+  overflow-x: hidden;
+}
+a {
+  color: white;
+}
+
+.line_btn {
+  width: calc(180 * 100vw/1440);
+  height: calc(42 * 100vw/1440);
+  font-size: calc(18 * 100vw/1440);
+  line-height: calc(18 * 100vw/1440);
+  font-weight: 700;
+  color: var(--line-blue);
+  border: 2px solid var(--line-blue);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index_title {
+  font-size: calc(32 * 100vw/1440);
+  line-height: calc(40 * 100vw/1440);
+  letter-spacing: calc(0.25 * 100vw/1440);
+  font-weight: 800;
+}
+
+
+
+/* MAIN */
+/* 섹션 1 : HERO */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero_bg_wrap {
+  display: block;
+  width: 100%;
+  min-height: calc(600 * 100vw/1440);
+  margin: 0 auto calc(10 * 100vw/1440);
+}
+
+.hero_bg_wrap img {
+  width: 100%;
+}
+
+.hero_text_wrap {
+  position: absolute;
+  bottom: calc(180 * 100vw/1440);
+  right: calc(138 * 100vw/1440);
+}
+
+.hero_text_wrap h2 {
+  font-size: calc(26 * 100vw/1440);
+  font-weight: 600;
+  letter-spacing: calc(0.25 * 100vw/1440);
+  line-height: calc(32 * 100vw/1440);
+  margin: 20px 0 calc(6 * 100vw/1440);
+  /* text-size-adjust: 100%; */
+}
+
+.hero_title {
+  font-size: calc(48 * 100vw/1440);
+  line-height: calc(60 * 100vw/1440);
+  margin: 0 0 calc(5 * 100vw/1440);
+}
+
+.hero_desc {
+  font-size: calc(22 * 100vw/1440);
+  font-weight: 400;
+  line-height: calc(33 * 100vw/1440);
+  margin: 0 0 calc(33.19 * 100vw/1440);
+  /* text-size-adjust: 100%; */
+}
+
+.hero_buy_now {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.hero_buy_now a {
+  padding: calc(14.4 * 100vw/1440) calc(52 * 100vw/1440);
+  background: var(--full-blue);
+  border-radius: calc(100 * 100vw/1440);
+  font-size: calc(16 * 100vw/1440);
+  line-height: calc(14 * 100vw/1440);
+  letter-spacing: calc(0.25 * 100vw/1440);
+  font-weight: 700;
+}
+
+
+
+/* CARD SECTION */
+/* 섹션 2 : TRIPLE CONTENTS SLOT */
+.card_section {
+  width: 100vw;
+  height: calc(600 * 100vw/1440);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 calc(10 * 100vw/1440);
+  overflow: hidden;
+}
+
+
+/* SINGLE */
+.single_content_slot {
+  width: calc(715 * 100vw/1440);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.single_img img,
+.two_img_top img,
+.two_img_bottom img {
+  width: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+
+.index_title.single_title {
+  font-size: calc(38 * 100vw/1440);
+  line-height: calc(45 * 100vw/1440);
+  margin: 0 0 calc(46 * 100vw/1440);
+  text-align: center;
+}
+
+.single_content_slot_list {
+  max-width: calc(480 * 100vw/1440);
+  margin: 0 auto calc(34 * 100vw/1440);
+  font-size: calc(28.08 * 100vw/1440);
+  letter-spacing: 0.25px;
+  line-height: calc(35 * 100vw/1440);
+  font-weight: 600;
+}
+
+.single_content_slot_list li {
+  margin: 0 0 calc(27 * 100vw/1440) calc(75 * 100vw/1440);
+  position: relative;
+}
+
+.single_content_slot_list li:last-child {
+  margin: 0 0 0 calc(75 * 100vw/1440);
+}
+
+.single_content_slot_list li img {
+  width: calc(40 * 100vw/1440);
+  margin: 0 calc(23 * 100vw/1440) 0 0;
+  position: absolute;
+  left: calc(-63 * 100vw/1440);
+}
+
+.single_contents_button {
+  position: relative;
+  margin: 0 auto;
+}
+
+
+
+
+/* DOUBLE */
+.two_contents_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two_content_slot_top,
+.two_content_slot_bottom {
+  width: calc(715 * 100vw/1440);
+  height: calc(295 * 100vw/1440);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.two_content_slot_top {
+  margin: 0 0 auto;
+}
+
+.index_title.two_title {
+  position: absolute;
+  left: calc(30 * 100vw/1440);
+  margin: 0 0 calc(30 * 100vw/1440);
+}
+
+
+
+/* 섹션 3 : SLIDE*/
+.slide_section {
+  width: 100%;
+  margin: 0 0 calc(10 * 100vw/1440);
+  overflow: hidden;
+}
+
+.slide_wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  white-space: nowrap;
+}
+
+.slide_item {
+  width: 100%;
+  min-height: 50px;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  user-select: none;
+  
+  display: block;
+  position: relative;
+}
+
+.slide_copy {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0; right: 0; left: 0; bottom: 0;
+}
+
+.index_title.slide_title {
+  font-size: calc(38 * 100vw/1440);
+  line-height: calc(45 * 100vw/1440);
+  margin-bottom: calc(5 * 100vw/1440);
+}
+
+.slide_desc {
+  font-size: calc(20 * 100vw/1440);
+  line-height: calc(30 * 100vw/1440);
+  margin-bottom: calc(20 * 100vw/1440);
+}
+.slide_desc.webcam {
+  width: calc(452 * 100vw/1440);
+}
+
+
+.slide_bg {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+
+/* 섹션 4: TRIPLE CONTENTS SLOT REVERSE */
+.flex_row_reverse {
+  flex-direction: row-reverse;
+}
+.justify_content_flex_end {
+  justify-content: flex-end;
+}
+
+.flex_row_reverse_title {
+  position: relative;
+  left: calc(30 * 100vw/1440);
+}
+
+.sub_title_18 {
+  max-width: calc(480 * 100vw/1440);
+  margin: 0 0 calc(30 * 100vw/1440);
+  position: relative;
+  left: calc(30 * 100vw/1440);
+  font-size: calc(18 * 100vw/1440);
+  line-height: calc(27 * 100vw/1440);
+  letter-spacing: calc(0.25 * 100vw/1440);
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+/* 섹션 5: CAMERA COMPARISON */
+.camera_comp {
+  margin: 0 0 calc(10 * 100vw/1440);
+}
+
+.camera_comp_wrap {
+  display: block;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.camera_comp_wrap picture {
+  display: block;
+}
+.camera_comp_wrap img {
+  width: 100%;
+}
+
+.camera_comp_text {
+  width: 100%;
+  position: absolute;
+  top: calc(96 * 100vw/1440);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.camera_comp_text .index_title {
+  font-size: calc(38 * 100vw/1440);
+  line-height: calc(45 * 100vw/1440);
+}
+
+.camera_comp_button {
+  margin: calc(20 * 100vw/1440) 0 0;
+}
+
+
+
+
+/* 섹션 6: FIVE CONTENTS SLOT */
+.five_contents_slot {
+  min-height: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.margin_bottom_10 {margin: 0 0 calc(10 * 100vw/1440);}
+
+.column_1, 
+.column_3 {
+  flex: 1 1 25%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.column_1 {
+  padding: 0 calc(10 * 100vw/1440) 0 0;
+}
+.column_3 {
+  padding: 0 0 0 calc(10 * 100vw/1440);
+}
+
+.column_2 {
+  display: block;
+  position: relative;
+  flex: 1 1 50%;
+}
+
+.column_1 img, 
+.column_2 img, 
+.column_3 img {
+  width: 100%;
+}
+
+.column_1_top, 
+.column_1_bottom,
+.column_3_top, 
+.column_3_bottom {
+  position: relative;
+}
+
+.column_2_text_wrap {
+  position: absolute;
+  left: calc(30 * 100vw/1440);
+  bottom: calc(33 * 100vw/1440);
+  display: flex;
+  flex-direction: column;
+}
+
+.column_2_desc {
+  width: calc(538 * 100vw/1440);
+  font-size: calc(20 * 100vw/1440);
+  line-height: calc(30 * 100vw/1440);
+  margin-top: calc(5 * 100vw/1440);
+}
+
+.five_contents_headline {
+  position: absolute;
+  left: calc(30 * 100vw/1440);
+  bottom: calc(20 * 100vw/1440);
+}
+
+.column_2_text_wrap .line_btn {
+  color: var(--line-blue);
+  margin: calc(20 * 100vw/1440) 0 0;
+}
+
+.five_contents_link {
+  display: block;
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+
+
+
+/* 섹션 7: FOOTNOTES */
+#footnotes {
+  background-color: rgb(0, 0, 0);
+}
+
+.footnotes_module {
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(50 * 100vw/1440) calc(182 * 100vw/1440);
+  font-size: calc(14 * 100vw/1440);
+  line-height: calc(18 * 100vw/1440);
+  text-align: center;
+}
+
+.footnotes_module h1 {
+  font-size: calc(14 * 100vw/1440);
+  line-height: calc(18 * 100vw/1440);
+  margin: 0 0 20px;
+}
+
+.footnotes_module p {
+  margin: 0 0 10px;
+  word-break: keep-all;
+}
+
+.footnotes_module p a {
+  color: var(--line-blue);
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,285 @@
+/* 공통 */
+body {
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.search_more_button {
+  min-width: calc(160 * 100vw/375);
+  height: calc(40 * 100vw/375);
+  font-size: calc(14 * 100vw/375);
+  line-height: calc(14 * 100vw/375);
+}
+
+.h2_title_32 {
+  font-size: calc(24 * 100vw/375);
+  letter-spacing: calc(0.25 * 100vw/375);
+  line-height: calc(30 * 100vw/375);
+}
+
+
+/* MAIN */
+/* 섹션 1 : HERO */
+
+.hero_background_wrap {
+  min-height: calc(590 * 100vw/375);
+  margin: 0 auto calc(10 * 100vw/375);
+}
+
+.hero_background_wrap picture img {
+  width: 100%;
+}
+
+.hero_text_wrap {
+  left: 0;
+  right: 0;
+  bottom: calc(44 * 100vw/375);
+}
+
+.hero_text_wrap h2 {
+  font-size: calc(16 * 100vw/375);
+  letter-spacing: calc(0.25 * 100vw/375);
+  line-height: calc(24 * 100vw/375);
+  margin: 0 0 calc(6 * 100vw/375);
+}
+
+.hero_title {
+  font-size: calc(32 * 100vw/375);
+  line-height: calc(40 * 100vw/375);
+  margin: 0 0 calc(6 * 100vw/375);
+}
+
+.hero_description {
+  font-size: calc(16 * 100vw/375);
+  line-height: calc(24 * 100vw/375);
+  margin: 0 0 calc(20 * 100vw/375);
+}
+
+.hero_buy_now {
+ align-items: center;
+}
+
+.hero_buy_now a {
+  padding: calc(13 * 100vw/375) calc(46.35 * 100vw/375);
+  border-radius: calc(100 * 100vw/375);
+  font-size: calc(16 * 100vw/375);
+  line-height: calc(14 * 100vw/375);
+  letter-spacing: calc(0.25 * 100vw/375);
+}
+
+
+
+/* CARD SECTION */
+/* 섹션 2 : TRIPLE CONTENTS SLOT */
+.card_section {
+  height: auto;
+  flex-direction: column;
+}
+
+
+/* SINGLE */
+.single_content_wrap {
+  flex-direction: column;
+  margin: 0 0 calc(10 * 100vw/375);
+  width: 100%;
+}
+
+.single_content_slot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(500 * 100vw/375);
+  margin: 0;
+  width: 100%;
+}
+
+.single_content_slot_title {
+  font-size: calc(24 * 100vw/375);
+  letter-spacing: calc(0.25 * 100vw/375);
+  line-height: calc(30 * 100vw/375);
+  margin: calc(15 * 100vw/375) 0 calc(31 * 100vw/375);
+}
+
+.single_content_slot_list {
+  font-size: calc(18 * 100vw/375);
+  letter-spacing: 0.25px;
+  line-height: calc(27 * 100vw/375);
+  margin: 0 auto calc(33 * 100vw/375);
+  max-width: calc(325 * 100vw/375);
+  padding: 0;
+}
+
+.single_content_slot_list li {
+  margin: 0 0 calc(26 * 100vw/375) calc(50 * 100vw/375);
+}
+
+.single_content_slot_list li:last-child {
+  margin: 0 0 0 calc(50 * 100vw/375);
+}
+
+.single_content_slot_list li img {
+  width: calc(40 * 100vw/375);
+  margin: 0 calc(16 * 100vw/375) 0 0;
+  left: calc(-55 * 100vw/375);
+}
+
+
+
+/* DOUBLE */
+.two_contents_wrap {
+  width: 100%;
+  position: relative;
+}
+
+.two_content_slot_top,
+.two_content_slot_bottom {
+  width: 100%;
+  height: calc(210 * 100vw/375);
+  margin: 0 0 calc(10 * 100vw/375);
+}
+
+.two_content_slot_title {
+  position: absolute;
+  left: calc(20 * 100vw/375);
+  margin: 0 0 calc(20 * 100vw/375);
+}
+
+
+
+
+/* 섹션 4: TRIPLE CONTENTS SLOT REVERSE */
+.flex_row_reverse  {flex-direction: column;}
+.justify_content_flex_end {justify-content: flex-end;}
+.left_30 {left: calc(20 * 100vw/375);}
+
+
+.sub_title_18 {
+  font-size: calc(16 * 100vw/375);
+  letter-spacing: calc(0.25 * 100vw/375);
+  line-height: calc(24 * 100vw/375);
+  left: calc(20 * 100vw/375);
+  margin: 0 0 calc(20 * 100vw/375);
+  max-width: calc(325 * 100vw/375);
+}
+
+
+
+
+/* 섹션 5: CAMERA COMPARISON */
+#camera_comp {
+  margin: 0 0 calc(10 * 100vw/375);
+}
+
+.camera_comp_wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.camera_comp_wrap img {
+  width: 100%;
+}
+
+.camera_comp_text {
+  left: calc(20 * 100vw/375);
+  bottom: calc(18 * 100vw/375);
+  top: auto;
+  align-items: flex-start;
+ }
+
+ .camera_comp_text h2 {
+  font-size: calc(24 * 100vw/375);
+  letter-spacing: calc(0.25 * 100vw/375);
+  line-height: calc(30 * 100vw/375);
+}
+
+.camera_comp_button {
+  margin: calc(10 * 100vw/375) 0 0;
+}
+
+
+
+
+/* 섹션 6: FIVE CONTENTS SLOT */
+#five_contents_slot {
+  height: auto;
+}
+
+.margin_bottom_10 {margin: 0 0 calc(10 * 100vw/375);}
+
+.column_1, .column_3 {
+  flex: 1 1 50%;
+}
+
+.column_1 {
+  order: 2;
+  padding: 0 calc(5 * 100vw/375) 0 0;
+}
+.column_3 {
+  order: 3;
+  padding: 0 0 0 calc(5 * 100vw/375);}
+
+.column_2 {
+  flex: 0 0 100%;
+  order: 1;
+}
+
+.column_2_text_wrap {
+  left: calc(20 * 100vw/375);
+  bottom: calc(20 * 100vw/375);
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.column_2_description {
+  width: auto;
+  font-size: calc(16 * 100vw/375);
+  line-height: calc(24 * 100vw/375);
+  margin-top: calc(6 * 100vw/375);
+}
+
+.five_contents_headline {
+  left: calc(15 * 100vw/375);
+  bottom: calc(8 * 100vw/375);
+  font-size: calc(16 * 100vw/375);
+  line-height: calc(24 * 100vw/375);
+}
+
+.column_2_button {
+  margin: calc(12 * 100vw/375) 0 0;
+}
+
+
+
+
+
+/* 섹션 7: FOOTNOTES */
+#footnotes {
+  background-color: rgb(0, 0, 0);
+}
+
+.footnotes_module {
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(30 * 100vw/375) calc(23 * 100vw/375);
+  font-size: calc(11 * 100vw/375);
+  line-height: calc(16 * 100vw/375);
+  text-align: left;
+}
+
+.footnotes_module h1 {
+  font-size: calc(11 * 100vw/375);
+  line-height: calc(16 * 100vw/375);
+  margin: 0 0 20px;
+}
+
+.footnotes_module p {
+  word-break: normal;
+}
+
+.footnotes_module p a {
+  color: rgb(3, 191, 254);
+  font-weight: 700;
+}
