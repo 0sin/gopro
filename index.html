@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <title>개인 프로젝트 GoPro – 액션 카메라, 360 카메라 + 액세서리</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="stylesheet" href="css/font.css">
+  <!-- <link rel="stylesheet" href="css/font.css"> -->
   <link rel="stylesheet" href="./assets/css/common.css">
   <link rel="stylesheet" href="./assets/css/index.css">
 
-  <link rel="stylesheet" media="screen and (min-width:1920px)" href="css/screen.css">
-  <link rel="stylesheet" media="screen and (max-width:450px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width:1920px)" href="./assets/css/screen.css">
+  <link rel="stylesheet" media="screen and (max-width:450px)" href="./assets/css/mobile.css">
 
   <link rel="stylesheet" href="https://use.typekit.net/kxf0dig.css">
 
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <script src="./assets/js/main.js" defer></script>
+
 
   <!-- <link rel="icon" sizes="16x16" href="gopro.png" type="image/png"> -->
 </head>
@@ -25,24 +27,24 @@
 
 <body>
 
-  <!-- <header id="header">
+  <header id="header">
     <nav id="gnb">
       <div class="gnb_logo_wrap">
         <a href="index.html"><div class="gnb_logo"></div></a>
       </div>
 
       <ul class="gnb_menu_wrap">
-        <li><a href="#"><span>카메라</span></a></li>
-        <li><a href="#"><span>액세서리</span></a></li>
-        <li><a href="#"><span>라이프 스타일 기어</span></a></li>
-        <li><a href="#"><span>조명</span></a></li>
-        <li><a href="#"><span>앱</span></a></li>
-        <li><a href="#"><span>구독</span></a></li>
+        <li><a href="#"><span class="cameras">카메라</span></a></li>
+        <li><a href="#"><span class="accessories">액세서리</span></a></li>
+        <li><a href="#"><span class="lifestyle">라이프 스타일 기어</span></a></li>
+        <li><a href="#"><span class="lights">조명</span></a></li>
+        <li><a href="#"><span class="apps">앱</span></a></li>
+        <li><a href="#"><span class="subscribes">구독</span></a></li>
       </ul>
-      <ul class="gnb_menu_mobile">
-        <li><a href="#"><i class="fas fa-bars"></i></a></li>
-        <li><a href="#"><i class="fas fa-search"></i></a></li>
-      </ul>
+      <!-- <ul class="gnb_menu_mobile">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul> -->
 
 
       <ul class="gnb_icon_wrap">
@@ -52,8 +54,52 @@
         <li><a href="#"><i class="far fa-user-circle"></i></a></li>
         <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
+
     </nav>
-  </header> -->
+    <div class="gnb_sub_menu">
+      <ul class="gnb_sub_menu_lists cameras">
+        <li class="gnb_sub_menu_list_item">
+          <a href="#">
+            <i aria-label="GoPro HERO 9 Black 카메라 온라인"></i>
+            <p>HERO9 Black</p>
+          </a>
+        </li>
+        <li class="gnb_sub_menu_list_item">
+          <a href="#">
+            <i aria-label="GoPro HERO 8 Black 카메라 개요"></i>
+            <p>HERO8 Black</p>
+          </a>
+        </li>
+        <li class="gnb_sub_menu_list_item">
+          <a href="#">
+            <i aria-label="GoPro MAX 카메라 개요"></i>
+            <p>MAX</p>
+          </a>
+        </li>
+        <li class="gnb_sub_menu_list_item">
+          <a href="#">
+            <i aria-label="GoPro HERO 7 Black 카메라 온라인"></i>
+            <p>HERO7 Black</p>
+          </a>
+        </li>
+        <ul class="gnb_sub_menu_footer_lists">
+          <li class="gnb_sub_menu_footer_list_item">
+            <a href="#">
+              <p>카메라 비교</p>
+            </a>
+          </li>
+          <li class="gnb_sub_menu_footer_list_item">
+            <a href="#">
+              <p>모든 카메라 보기</p>
+            </a>
+          </li>
+        </ul>
+      </ul>
+      <ul class="gnb_sub_menu_lists accessories"></ul>
+      <ul class="gnb_sub_menu_lists lifestyle"></ul>
+      <ul class="gnb_sub_menu_lists apps"></ul>
+    </div>
+  </header>
   
   <main>
     <!-- 섹션 1 : HERO -->
@@ -352,5 +398,7 @@
       <p>GoPro, HERO 및 각각의 로고는 미국 및 기타 국가에서 GoPro, Inc.의 상표 또는 등록 상표입니다. 기타 모든 상표는 각 소유자의 재산입니다. © 2020 GoPro, Inc. All rights reserved.</p>
     </div>
   </footer> -->
+
+  
 </body>
 </html>

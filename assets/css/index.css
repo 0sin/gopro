@@ -1,17 +1,11 @@
-/* Root */
-:root {
-  --line-blue: rgb(3, 191, 254);
-  --full-blue: rgb(37, 110, 255);
-}
-
 /* index 공통 */
 body {
-  color: white;
+  color: var(--white);
   /* background-color: black; */
   overflow-x: hidden;
 }
 a {
-  color: white;
+  color: var(--white);
 }
 
 .line_btn {
