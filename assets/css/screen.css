@@ -1,13 +1,13 @@
 /* MAIN */
 /* 공통 */
-.search_more_button {
+.line_btn {
   min-width: calc(180 * 1920px/1440);
   height: calc(42 * 1920px/1440);
   font-size: calc(18 * 1920px/1440);
   line-height: calc(18 * 1920px/1440);
 }
 
-.h2_title_32 {
+.index_title {
   font-size: calc(32 * 1920px/1440);
   letter-spacing: calc(0.25 * 1920px/1440);
   line-height: calc(40 * 1920px/1440);
@@ -15,7 +15,7 @@
 
 
 /* hero section */
-.hero_background_wrap {
+.hero_bg_wrap {
   max-width: 1920px;
   min-height: calc(600 * 1920px/1440);
   margin: 0 auto calc(10 * 1920px/1440) auto;
@@ -44,7 +44,7 @@
   margin: 0 0 calc(6.66 * 1920px/1440);
 }
 
-.hero_description {
+.hero_desc {
   font-size: calc(22 * 1920px/1440);
   line-height: calc(33 * 1920px/1440);
   margin: 0 0 calc(44.23 * 1920px/1440);
@@ -106,7 +106,7 @@
   height: calc(295 * 1920px/1440);
 }
 
-.two_content_slot_title {
+.index_title.two_title {
   left: calc(30 * 1920px/1440);
   margin: 0 0 calc(30 * 1920px/1440);
 }
@@ -116,8 +116,7 @@
 
 
 /* 섹션 4: TRIPLE CONTENTS SLOT REVERSE */
-.left_30 {left: calc(30 * 1920px/1440);}
-.sub_title_18 {
+.section4_sub_title {
   font-size: calc(18 * 1920px/1440);
   letter-spacing: calc(0.25 * 1920px/1440);
   line-height: calc(27 * 1920px/1440);
@@ -131,19 +130,15 @@
 
 
 /* 섹션 5: CAMERA COMPARISON */
-#camera_comp {
+.camera_comp {
   margin: 0 0 calc(10 * 1920px/1440);
-}
-
-.camera_comp_wrap img {
-  width: 100%;
 }
 
 .camera_comp_text {
   top: calc(96 * 1920px/1440);
- }
+}
 
- .camera_comp_text h2 {
+.camera_comp_text.index_title {
   font-size: calc(38 * 1920px/1440);
   line-height: calc(45 * 1920px/1440);
 }
@@ -157,15 +152,19 @@
 
 
 /* 섹션 6: FIVE CONTENTS SLOT */
-#five_contents_slot {
+.five_contents_slot {
   max-width: 1920px;
   margin: 0 auto;
 }
 
 .margin_bottom_10 {margin: 0 0 calc(10 * 1920px/1440);}
 
-.column_1 {padding: 0 calc(10 * 1920px/1440) 0 0;}
-.column_3 {padding: 0 0 0 calc(10 * 1920px/1440);}
+.column_1 {
+  padding: 0 calc(10 * 1920px/1440) 0 0;
+}
+.column_3 {
+  padding: 0 0 0 calc(10 * 1920px/1440);
+}
 
 
 .column_2_text_wrap {
@@ -173,11 +172,11 @@
   bottom: calc(33 * 1920px/1440);
 }
 
-.column_2_description {
+.column_2_desc {
   width: calc(538 * 1920px/1440);
   font-size: calc(20 * 1920px/1440);
   line-height: calc(30 * 1920px/1440);
-  margin-top: calc(5 * 1920px/1440);
+  margin: calc(5 * 1920px/1440) 0 calc(20 * 1920px/1440);
 }
 
 .five_contents_headline {
@@ -185,9 +184,7 @@
   bottom: calc(20 * 1920px/1440);
 }
 
-.column_2_button {
-  margin: calc(20 * 1920px/1440) 0 0;
-}
+
 
 
 /* 섹션 7: FOOTNOTES */

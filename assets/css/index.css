@@ -1,7 +1,7 @@
 /* index 공통 */
 body {
   color: var(--white);
-  /* background-color: black; */
+  background-color: var(--black);
   overflow-x: hidden;
 }
 a {
@@ -75,7 +75,6 @@ a {
   font-weight: 400;
   line-height: calc(33 * 100vw/1440);
   margin: 0 0 calc(33.19 * 100vw/1440);
-  /* text-size-adjust: 100%; */
 }
 
 .hero_buy_now {
@@ -87,12 +86,12 @@ a {
 
 .hero_buy_now a {
   padding: calc(14.4 * 100vw/1440) calc(52 * 100vw/1440);
-  background: var(--full-blue);
   border-radius: calc(100 * 100vw/1440);
   font-size: calc(16 * 100vw/1440);
   line-height: calc(14 * 100vw/1440);
   letter-spacing: calc(0.25 * 100vw/1440);
   font-weight: 700;
+  background: var(--full-blue);
 }
 
 
@@ -272,7 +271,7 @@ a {
   left: calc(30 * 100vw/1440);
 }
 
-.sub_title_18 {
+.section4_sub_title {
   max-width: calc(480 * 100vw/1440);
   margin: 0 0 calc(30 * 100vw/1440);
   position: relative;
@@ -317,7 +316,7 @@ a {
   align-items: center;
 }
 
-.camera_comp_text .index_title {
+.camera_comp_text.index_title {
   font-size: calc(38 * 100vw/1440);
   line-height: calc(45 * 100vw/1440);
 }
@@ -338,7 +337,9 @@ a {
   position: relative;
 }
 
-.margin_bottom_10 {margin: 0 0 calc(10 * 100vw/1440);}
+.margin_bottom_10 {
+  margin: 0 0 calc(10 * 100vw/1440);
+}
 
 .column_1, 
 .column_3 {
@@ -385,7 +386,7 @@ a {
   width: calc(538 * 100vw/1440);
   font-size: calc(20 * 100vw/1440);
   line-height: calc(30 * 100vw/1440);
-  margin-top: calc(5 * 100vw/1440);
+  margin: calc(5 * 100vw/1440) 0 calc(20 * 100vw/1440);
 }
 
 .five_contents_headline {
@@ -396,7 +397,6 @@ a {
 
 .column_2_text_wrap .line_btn {
   color: var(--line-blue);
-  margin: calc(20 * 100vw/1440) 0 0;
 }
 
 .five_contents_link {
@@ -411,7 +411,7 @@ a {
 
 
 /* 섹션 7: FOOTNOTES */
-#footnotes {
+.footnotes {
   background-color: rgb(0, 0, 0);
 }
 
