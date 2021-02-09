@@ -148,6 +148,34 @@ body {
   max-width: calc(325 * 100vw/375);
 }
 
+/* 섹션 3 : SLIDE*/
+.slide_section {
+  margin: 0 0 calc(10 * 100vw/375);
+}
+
+.slide_copy {
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+  left: calc(20 * 100vw/375); 
+  bottom: calc(32 * 100vw/375);
+}
+
+.index_title.slide_title {
+  font-size: calc(24 * 100vw/375);
+  line-height: calc(35 * 100vw/375);
+  margin-bottom: calc(5 * 100vw/375);
+}
+
+.slide_desc {
+  font-size: calc(16 * 100vw/375);
+  line-height: calc(24 * 100vw/375);
+  margin-bottom: calc(21 * 100vw/375);
+}
+
+.slide_desc.webcam {
+  width: calc(452 * 100vw/375);
+}
 
 
 

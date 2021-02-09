@@ -92,3 +92,39 @@ function openFooterList(e) {
 
 mobilefooterlists.forEach(e => e.addEventListener('click', openFooterList));
 
+
+
+
+// Main Slide
+
+
+const slides = document.querySelector('.slide_wrap')
+const bullets = document.querySelectorAll('.slide_bullets button')
+
+
+let SLIDE_WIDTH = slides.getBoundingClientRect().width
+let SLIDE_ITEM_WIDTH = slides.children[0].getBoundingClientRect().width;
+
+console.log(SLIDE_WIDTH);
+
+
+function cloneSlideItem() {
+  const cloneSlideItem_first = slides.firstElementChild.cloneNode(true);
+  const cloneSlideItem_last = slides.lastElementChild.cloneNode(true);
+
+  slides.appendChild(cloneSlideItem_first);
+  slides.insertBefore(cloneSlideItem_last, slides.firstElementChild);
+}
+cloneSlideItem();
+
+
+bullets.forEach((e, idx) => e.addEventListener('click', () => {
+  let currentIndex = idx + 1;
+
+  slides.style.transform = `translateX(${-currentIndex * SLIDE_ITEM_WIDTH}px)`;
+
+  console.log(idx)
+}));
+
+
+
