@@ -96,18 +96,16 @@ mobilefooterlists.forEach(e => e.addEventListener('click', openFooterList));
 
 
 // Main Slide
-
-
+// Variable declaration
 const slides = document.querySelector('.slide_wrap')
 const bullets = document.querySelectorAll('.slide_bullets button')
 
-
 let SLIDE_WIDTH = slides.getBoundingClientRect().width
-let SLIDE_ITEM_WIDTH = slides.children[0].getBoundingClientRect().width;
+// let SLIDE_ITEM_WIDTH = slides.children[0].getBoundingClientRect().width;
+let currentIndex = 0;
 
-console.log(SLIDE_WIDTH);
 
-
+// Slide Item Clone
 function cloneSlideItem() {
   const cloneSlideItem_first = slides.firstElementChild.cloneNode(true);
   const cloneSlideItem_last = slides.lastElementChild.cloneNode(true);
@@ -115,16 +113,78 @@ function cloneSlideItem() {
   slides.appendChild(cloneSlideItem_first);
   slides.insertBefore(cloneSlideItem_last, slides.firstElementChild);
 }
-cloneSlideItem();
 
 
-bullets.forEach((e, idx) => e.addEventListener('click', () => {
-  let currentIndex = idx + 1;
+// Slide Transition
+const slideTransition = function(TRANSITION_DURATION) {
+  slides.style.transition = `transform ${TRANSITION_DURATION}ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s`;
+}
 
-  slides.style.transform = `translateX(${-currentIndex * SLIDE_ITEM_WIDTH}px)`;
+// Change Bullet Style
+const onBullets = function(idx) {
+  bullets.forEach(e => e.classList.remove('selected'));
+  bullets[idx].classList.add('selected');
+}
 
-  console.log(idx)
+
+// Slide Move
+const onSlide = function(idx) {
+  currentIndex = idx;
+
+  slides.style.transform = `translateX(${-currentIndex * SLIDE_WIDTH}px)`;
+  console.log(currentIndex);
+  if (currentIndex === 3) {
+    onBullets(0);
+  } else {
+    onBullets(currentIndex-1);
+  }
+}
+
+
+
+
+// Resize - Slide Width값 변경
+const onResizeWidth = function() {
+  SLIDE_WIDTH = document.body.clientWidth;
+  slideTransition(0);
+  onSlide(currentIndex);
+}
+
+const nextSlide = function() {
+  currentIndex++;
+
+  if(currentIndex > 3) {
+    currentIndex = 1;
+    slideTransition(0);
+    onSlide(currentIndex);
+    // onBullets(currentIndex);
+  } else {
+    slideTransition(400);
+    onSlide(currentIndex);
+    // onBullets(currentIndex);
+  } 
+
+}
+
+const onSetInterval = setInterval(nextSlide, 3000);
+
+
+// AddEventListener
+window.addEventListener('resize', onResizeWidth);
+bullets.forEach((e, index) => e.addEventListener('click', () => {
+  slideTransition(400);
+  onSlide(index+1);
+  // onBullets(index);
 }));
+
+
+// First Page
+(() => {
+  cloneSlideItem();
+  onSlide(1);
+})();
+
+
 
 
 
