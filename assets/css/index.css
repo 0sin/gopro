@@ -1,5 +1,6 @@
 /* index 공통 */
 body {
+  width: 100%;
   color: var(--white);
   background-color: var(--black);
   overflow-x: hidden;
@@ -33,6 +34,10 @@ a {
 
 /* MAIN */
 /* 섹션 1 : HERO */
+#main {
+  overflow-x: hidden;
+}
+
 .hero {
   position: relative;
   text-align: center;
